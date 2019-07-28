@@ -14,7 +14,7 @@ class MatrixController
     int clearNegative;
     
   public:
-    MatrixController();
+    MatrixController(int dataInputP, int updateP, int shiftP, int clearP, int dataInputN, int updateN, int shiftN, int clearN);
     void setLed(int x, int y, bool state);
     void inputPositive(int binary);
     void inputNegative(int binary);

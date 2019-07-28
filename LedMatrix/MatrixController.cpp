@@ -1,15 +1,15 @@
 #include "MatrixController.hpp"
 
-MatrixController::MatrixController()
+MatrixController::MatrixController(int dataInputP, int updateP, int shiftP, int clearP, int dataInputN, int updateN, int shiftN, int clearN)
 { 
-  dataInputPositive = 2;
-  updatePositive = 3;
-  shiftPositive = 4;
-  clearPositive = 5;
-  dataInputNegative = 6;
-  updateNegative = 7;
-  shiftNegative = 8;
-  clearNegative = 9;
+  dataInputPositive = dataInputP;
+  updatePositive = updateP;
+  shiftPositive = shiftP;
+  clearPositive = clearP;
+  dataInputNegative = dataInputN;
+  updateNegative = updateN;
+  shiftNegative = shiftN;
+  clearNegative = clearN;
 }
 
 void MatrixController::init()
