@@ -10,7 +10,7 @@ Controller for a led matrix with shift register
 - 1 Breadboard also for prototyping
                 
 ## MatrixController class: 
-- The constructor needs the 4 pins of each shift register. You can find the pins in the datasheet of the74hc595 shiftregister.
+- The constructor needs the 4 pins of each shift register. You can find the pins in the datasheet of the74hc595 shiftregister. It also needs the size of the matrix(x and y)
 - The init() function initializes the 8 pins and puts it in the right state. Just init it in the setup function of Arduino.
 - The setLed() function needs a x and y position and the state of the led.
 - The updateAll() function updates all bits that are safed in the shift register.
