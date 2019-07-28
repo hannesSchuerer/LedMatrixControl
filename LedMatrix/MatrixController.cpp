@@ -1,6 +1,6 @@
 #include "MatrixController.hpp"
 
-MatrixController::MatrixController(int dataInputP, int updateP, int shiftP, int clearP, int dataInputN, int updateN, int shiftN, int clearN)
+MatrixController::MatrixController(int dataInputP, int updateP, int shiftP, int clearP, int dataInputN, int updateN, int shiftN, int clearN, int x, int y)
 { 
   dataInputPositive = dataInputP;
   updatePositive = updateP;
@@ -10,6 +10,8 @@ MatrixController::MatrixController(int dataInputP, int updateP, int shiftP, int 
   updateNegative = updateN;
   shiftNegative = shiftN;
   clearNegative = clearN;
+  matrixSizeX = x;
+  matrixSizeY = y;
 }
 
 void MatrixController::init()
@@ -36,7 +38,7 @@ void MatrixController::init()
 
 void MatrixController::setLed(int x, int y, bool state)
 {
-  for(int i = 0; i < 8; i++)
+  for(int i = 0; i < matrixSizeX; i++)
   {
     if(i==x)
     {
@@ -49,7 +51,7 @@ void MatrixController::setLed(int x, int y, bool state)
       shiftDataPositive();
     }
   }
-  for(int i = 0; i < 8; i++)
+  for(int i = 0; i < matrixSizeY; i++)
   {
     if(i==y)
     {

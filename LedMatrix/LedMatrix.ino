@@ -1,6 +1,6 @@
 #include "MatrixController.hpp"
 
-MatrixController matrixController(2, 3, 4, 5, 6, 7, 8, 9);
+MatrixController matrixController(2, 3, 4, 5, 6, 7, 8, 9, 8, 8);
 
 void setup() {
   matrixController.init();
